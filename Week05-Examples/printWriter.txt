@@ -1,0 +1,4 @@
+merhaba
+dünya
+Merhaba, Dünya!
+Sayı: 42, Metin: OpenAI
