@@ -1,6 +1,9 @@
 package abstract_example03;
 
 public abstract class Animal {
+    public Animal() {
+        System.out.println("I am Animal no-arg constructor");
+    }
 
     static int feetSize = 8;
     abstract void makeSound();
