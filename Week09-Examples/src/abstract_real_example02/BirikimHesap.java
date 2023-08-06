@@ -1,7 +1,8 @@
 package abstract_real_example02;
 
-public class BirikimHesap extends Hesap{
+public class BirikimHesap extends Hesap {
     private double faizOrani;
+
     public BirikimHesap(String hesapNo, double faizOrani) {
         super(hesapNo);
         this.faizOrani = faizOrani;

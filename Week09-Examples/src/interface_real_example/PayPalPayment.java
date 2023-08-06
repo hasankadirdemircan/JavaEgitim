@@ -1,6 +1,6 @@
 package interface_real_example;
 
-public class PayPalPayment implements PaymetMehod{
+public class PayPalPayment implements PaymetMehod {
     private String email;
 
     public PayPalPayment(String email) {

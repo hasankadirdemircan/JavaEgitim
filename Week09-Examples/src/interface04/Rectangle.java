@@ -1,6 +1,6 @@
 package interface04;
 
-public class Rectangle implements Polygon{
+public class Rectangle implements Polygon {
 
     @Override
     public void b() {

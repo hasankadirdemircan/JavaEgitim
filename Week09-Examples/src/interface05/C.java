@@ -1,5 +1,5 @@
 package interface05;
 
-public interface C extends A, B{
+public interface C extends A, B {
 
 }

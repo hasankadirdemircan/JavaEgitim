@@ -13,10 +13,10 @@ public abstract class Hesap {
     }
 
     public void paraCek(double miktar) {
-        if(miktar <= getBakiye()) {
+        if (miktar <= getBakiye()) {
             paraYatir(-miktar); //setBakiye(getBakiye() - miktar);
             System.out.println(miktar + " TL çekildi");
-        }else {
+        } else {
             System.out.println("Yetersiz bakiye");
         }
     }

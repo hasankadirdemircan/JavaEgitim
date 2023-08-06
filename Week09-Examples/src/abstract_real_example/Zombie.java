@@ -1,6 +1,6 @@
 package abstract_real_example;
 
-public class Zombie extends Enemy{
+public class Zombie extends Enemy {
     public Zombie() {
         health = 100;
         damage = 5;

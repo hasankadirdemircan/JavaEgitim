@@ -30,27 +30,27 @@ public class Musteri {
 
     public void paraYatir(String hesapNo, double miktar) {
         Hesap hesap = hesapBul(hesapNo);
-        if(hesap != null) {
+        if (hesap != null) {
             hesap.paraYatir(miktar);
-        }else {
+        } else {
             System.out.println("hesap bulunamadı");
         }
     }
 
     public void paraCek(String hesapNo, double miktar) {
         Hesap hesap = hesapBul(hesapNo);
-        if(hesap != null) {
+        if (hesap != null) {
             hesap.paraCek(miktar);
-        }else {
+        } else {
             System.out.println("hesap bulunamadı");
         }
     }
 
     public void bakiyeSorgula(String hesapNo) {
         Hesap hesap = hesapBul(hesapNo);
-        if(hesap != null) {
+        if (hesap != null) {
             System.out.println("Hesap No : " + hesap.getHesapNo() + " Bakiye : " + hesap.getBakiye());
-        }else {
+        } else {
             System.out.println("Hesap bulunamadı");
         }
 
@@ -63,8 +63,8 @@ public class Musteri {
 
     //hesabını bul , BirikimHesap.java veya VadesizHesap.java
     public Hesap hesapBul(String hesapNo) {
-        for(Hesap hesap : hesaplar) {
-            if(hesap.getHesapNo().equals(hesapNo)){
+        for (Hesap hesap : hesaplar) {
+            if (hesap.getHesapNo().equals(hesapNo)) {
                 //BirikimHesap b = (BirikimHesap) hesap;
                 return hesap;
             }

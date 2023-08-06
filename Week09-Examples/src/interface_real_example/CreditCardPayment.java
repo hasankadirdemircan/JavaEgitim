@@ -1,6 +1,6 @@
 package interface_real_example;
 
-public class CreditCardPayment implements PaymetMehod{
+public class CreditCardPayment implements PaymetMehod {
     private String cardNumber;
     private String expiryDate;
 

@@ -11,7 +11,7 @@ public abstract class Enemy {
         System.out.println("Enemy is damaged : " + damage);
         System.out.println("enemy health is : " + health);
 
-        if(health <= 0) {
+        if (health <= 0) {
             System.out.println("Enemy defeated. - is killed");
         }
     }
