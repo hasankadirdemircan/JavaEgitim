@@ -1,17 +1,34 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.*;
+
+enum Days {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        //HashMap null ile çalışır.
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put(null,null);
+        System.out.println("hashmap");
+        System.out.println(hashMap);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        //LinkedHashMap null ile çalışır.
+        LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put(null,null);
+        System.out.println("linkedHashMap");
+        System.out.println(linkedHashMap);
+
+        //EnumMap null ile çalışmaz. NullPointerException
+        EnumMap<Days, String> enumMap = new EnumMap<>(Days.class);
+        enumMap.put(null, null);
+        System.out.println("enumMap");
+        System.out.println(enumMap);
+
+        //TreeMap null ile çalışmaz. NullPointerException
+        TreeMap<String, String> treeMap = new TreeMap<>();
+        treeMap.put(null,null);
+        System.out.println("treeMap");
+        System.out.println(treeMap);
+
     }
 }
