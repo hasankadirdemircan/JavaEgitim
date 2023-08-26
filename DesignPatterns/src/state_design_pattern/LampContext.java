@@ -1,9 +1,11 @@
+package state_design_pattern;
+
 public class LampContext {
     private LampState lampState;
 
     public LampContext() {
         setLampState(new LampCloseState());
-      //  LampState lampState1 = new LampCloseState();
+      //  state_design_pattern.LampState lampState1 = new state_design_pattern.LampCloseState();
     }
 
     public void onOpen() {

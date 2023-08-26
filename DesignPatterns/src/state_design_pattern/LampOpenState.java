@@ -1,3 +1,5 @@
+package state_design_pattern;
+
 public class LampOpenState implements LampState{
     @Override
     public void onOpen() {
