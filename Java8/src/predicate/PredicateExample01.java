@@ -14,6 +14,7 @@ public class PredicateExample01 {
             return element.startsWith("h");
         };
 
+        System.out.println(predicate1.test("hasan"));
         Stream<String> names = Stream.of("java8", "hasan", "kadir", "demircan", "hello");
         names.filter(predicate1).forEach(System.out::println);
         /*  Stream<String> namesH = names.filter(predicate1);
