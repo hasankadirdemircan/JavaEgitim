@@ -21,7 +21,6 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         //System.out.println(carList); for-each
     }
 }

@@ -20,8 +20,9 @@ public class CarDbProcess {
 
     List<Car> selectAllCars(Connection conn) throws SQLException {
         // SELECT işlemi
-        String selectSQL = "SELECT * FROM cars";
+        String selectSQL = "SELECT * FROM cars where brand = ?"; //
         PreparedStatement selectStatement = conn.prepareStatement(selectSQL);
+        selectStatement.setString(1, "Togg");
         ResultSet resultSet = selectStatement.executeQuery();
         List<Car> carList = new ArrayList<>();
         while (resultSet.next()) {
