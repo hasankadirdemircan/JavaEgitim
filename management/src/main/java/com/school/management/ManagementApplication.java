@@ -36,6 +36,10 @@ public class ManagementApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
+		studentRepository.studentsOfLessonByLessonIdAndIsActive(3L, false);
+	}
+
+	private void findStudentsOfLessonByLessonName() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Dersler");
 		String lessonName = scanner.next();

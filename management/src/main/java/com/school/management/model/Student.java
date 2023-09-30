@@ -14,6 +14,7 @@ public class Student {
 
     @Id
     @Column(name = "student_no")
+    @
     private Long studentNo;
 
     @Column(name = "first_name")

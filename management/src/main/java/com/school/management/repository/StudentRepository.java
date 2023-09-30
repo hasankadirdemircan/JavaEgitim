@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -18,5 +19,11 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
     @Query(value = "SELECT * FROM student s WHERE s.first_name = :firstName", nativeQuery = true)
     Optional<Student> findByFirstNameNative(@Param("firstName") String firstName);
+
+    @Query("SELECT s FROM Student s INNER JOIN LessonDetail ld ON"
+            + " s.studentNo = ld.studentNo"
+            + " AND ld.lessonId = :lessonId" +
+            " AND s.isActive = :isActive")
+    List<Student> studentsOfLessonByLessonIdAndIsActive(@Param("lessonId") Long lessonId, @Param("isActive") boolean isActive);
 
 }
