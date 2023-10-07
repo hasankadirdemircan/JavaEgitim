@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title> HTML JavaScript Page </title>
+ 
+    <style>
+        #demo {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> My First JavaScript </h1>
+
+    <button
+     type="button" onclick="document.getElementById('demo').innerHTML = Date()"> 
+     Tarihi Göster
+    </button>
+    <p id="demo"></p>
+
+
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+<p id="demo2"></p>
+
+    <script>
+    document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+    </script> 
+   
+</body>
+
+
+</html>
