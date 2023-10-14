@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript String Methods</h1>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo">Please visit Microsoft! Microsoft!</p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  console.log("html okudum")
+  console.log(text)
+  document.getElementById("demo").innerHTML =
+  text.replace("Microsoft","W3Schools");
+
+  document.getElementById("demo2").innerHTML =
+  text.replaceAll("Microsoft","W3Schools");
+}
+</script>
+</body>
+</html>

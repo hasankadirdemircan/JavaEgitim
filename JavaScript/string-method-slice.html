@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Never Create Strings as Objects</h2>
+<p>Strings and objects cannot be safely compared.</p>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+
+let part2 = text.slice(7);
+
+let part3 = text.slice(-12,-6);
+document.getElementById("demo").innerHTML = part;
+document.getElementById("demo2").innerHTML = part2;
+document.getElementById("demo3").innerHTML = part3;
+
+</script>
+</body>
+</html>

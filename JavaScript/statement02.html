@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Redeclaring a Variable Using let</h2>
+<p id="demo"></p>
+<script>
+let  x = 10;
+console.log("dışarı")
+console.log(x)
+{  
+    let x = 2;
+    console.log("içeri")
+    console.log(x)
+}
+console.log("en son")
+console.log(x)
+document.getElementById("demo").innerHTML = x;
+</script>
+</body>
+</html>

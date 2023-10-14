@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Strings</h1>
+<h2>The trim() Method</h2>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+let text1 = "         Hello World!     ";
+let text2 = text1.trim();
+document.getElementById("demo").innerHTML =
+"Length text1 = " + text1.length + "<br>Length text2 = " + text2.length;
+
+let text3 = text1.trimStart();
+console.log("trim start: " + text3)
+document.getElementById("demo2").innerHTML = text1.trimStart().length;
+
+
+let text4 = text1.trimEnd();
+console.log("trim end: " + text4)
+document.getElementById("demo3").innerHTML = text4.length;
+
+</script>
+</body>
+</html>

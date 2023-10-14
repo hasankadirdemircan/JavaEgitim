@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript String Methods</h1>
+<p>Convert string to upper case:</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo">Hello Worldi!</p>
+<p id="demo2"></p>
+<script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  console.log("okunan değer : " + text )
+  document.getElementById("demo").innerHTML =
+  text.toLocaleUpperCase('tr-TR');
+
+  document.getElementById("demo2").innerHTML =
+  text.toLowerCase();
+}
+</script>
+</body>
+</html>

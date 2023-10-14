@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Function</h2>
+<button onclick="doIt()"> Do IT</button>
+<button onclick="multipy(3,6)"> Multipy Function</button>
+<p id="demo"></p>
+
+<script>
+    
+    function multipy(p1, p2) {
+        console.log("multipy method")
+        console.log(p1)
+        console.log(p2)
+        return p1 * p2;
+    }
+
+    function doIt() {
+        console.log("do it method")
+        let result = multipy(3,5);
+        document.getElementById("demo").innerHTML = result; 
+    }
+</script>
+
+</body>
+</html>
