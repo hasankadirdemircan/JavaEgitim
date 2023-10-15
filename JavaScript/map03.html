@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The map() Method</h2>
+    <p>Create a new array by performing a function on each array element:</p>
+    <p id ="demo"></p>
+<script>
+   const myUsers = [
+    { name: 'shark', likes: 'ocean' },
+    { name: 'turtle', likes: 'pond' },
+    { name: 'otter', likes: 'fish biscuits' }
+]
+const myUserObject = { name: 'shark', likes: 'ocean' };
+
+const usersByLikes = myUsers.map(item => {
+    const container = {};
+
+    console.log("container")
+    console.log(container)
+    container[item.name] = item.likes;
+    
+    console.log("container[item.name] = item.likes;")
+    console.log(container)
+
+    container.age = item.name.length * 10;
+    console.log("   container.age = item.name.length * 10")
+    console.log(container)
+
+
+    return container;
+})
+
+console.log(usersByLikes);
+
+</script>
+</body>
+</html>
