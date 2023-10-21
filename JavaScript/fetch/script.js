@@ -1,4 +1,6 @@
-fetch('https://dummyjson.com/products/1')
+fetch('https://dummyjson.com/products/1', {
+    method: 'GET',
+})
 .then(response => {
    if(!response.ok) {
         throw new Error('API isteği başarısız. Durum kodu : ' + response.status)
