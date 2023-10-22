@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const postId = urlParams.get('id');
 
 // JSON verisini almak için API URL'si
-const apiUrl = `https://jsonplaceholder.typicode.com/posts/${postId}`;
+const apiUrl = `https://jsonplaceholder.typicode.com/pts/${postId}`;
 
 // Detayları görüntüleyen işlev
 function showPostDetails(post) {
