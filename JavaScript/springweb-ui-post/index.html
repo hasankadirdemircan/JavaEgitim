@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Yeni Gönderi Oluştur</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    </head>
+<body>
+
+    <div class="container">
+        <h1> Yeni Gönderi Oluştur</h1>
+        <form id="post-form">
+            <div class="form-group row">
+                <div class="col-3">
+                    <label> Firstname: </label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-3">
+                    <label> Surname: </label>
+                    <input type="text" class="form-control" id="surname" required>
+                </div>
+                <div  class="col-3">
+                    <label> salary: </label>
+                    <input type="text" class="form-control" id="salary" required>    
+                </div>
+                <div  class="col-3">
+                    <label> department: </label>
+                    <input type="text" class="form-control" id="department" required>
+                </div>
+            </div>
+            <div>
+                <label> Gender: </label>
+                <select id="genderOptions" class="form-select" aria-label="Choose" >
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                   
+                  </select>
+            </div>
+                
+            <div class="row">
+                <div class="col-3">
+                    <label> birthDate: </label>
+                    <input  type="date"class="form-control" id="birthDate" required>
+                </div>
+            </div>
+            
+                <label> isMarried: </label>
+                <div class="form-check ml-3">
+                   
+                    <input class="form-check-input" type="radio" name="marriedInfo" value="true">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                     yes
+                    </label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="marriedInfo" value="false" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      no
+                    </label>
+                  </div>
+          
+            <button type="submit" class="btn btn-primary">Personel Oluştur</button>
+        </form>
+    </div>
+ 
+<script src="./script.js"></script>
+</body>
+</html>
