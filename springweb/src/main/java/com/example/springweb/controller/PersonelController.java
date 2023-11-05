@@ -2,7 +2,7 @@ package com.example.springweb.controller;
 
 import com.example.springweb.model.Personel;
 import com.example.springweb.service.PersonelService;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -12,11 +12,15 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/personel")
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 public class PersonelController {
 
     private final PersonelService personelService;
+    @Autowired
+    public PersonelController(PersonelService personelService) {
+        this.personelService = personelService;
+    }
 
     @PostMapping("/save")
     public Personel savePersonel(@Validated @RequestBody Personel personel) {
